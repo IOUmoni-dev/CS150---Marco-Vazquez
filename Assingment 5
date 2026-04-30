@@ -1,0 +1,172 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "a0d21e7a-4cd7-48c4-a40c-8cb08e845b2e",
+   "metadata": {},
+   "source": [
+    "task 1: "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "72811203-41c6-45f8-adc7-185c8a6c6be1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter an activity from last Saturday(\"Done\" to stop):  Done\n",
+      "enter an activity from last Sunday(\"Done\" to stop):  Done\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Saturday activities: set()\n",
+      "Sunday activity: set()\n",
+      "Activities  done on both days: set()\n",
+      "Activities done on at leas one of the days: set()\n"
+     ]
+    }
+   ],
+   "source": [
+    "actSat=set()\n",
+    "activity=input('enter an activity from last Saturday(\"Done\" to stop): ')\n",
+    "while activity != \"Done\":\n",
+    "    actSat.add(activity)\n",
+    "    activity=input('enter an activity from last Saturday(\"Done\" to stop):')\n",
+    "    \n",
+    "actSun=set()\n",
+    "activity=input('enter an activity from last Sunday(\"Done\" to stop): ')\n",
+    "while activity != \"Done\": \n",
+    "    actSun.add(activity) \n",
+    "    activity=input('enter an activity from last Sunday(\"Done\" to stop): ')\n",
+    "print('Saturday activities:', actSat)\n",
+    "print('Sunday activity:', actSun)\n",
+    "\n",
+    "print('Activities  done on both days:', actSat.intersection(actSun))\n",
+    "print('Activities done on at leas one of the days:', actSat.union(actSun))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "55d9fb2d-90a4-43c4-baba-114c84be788b",
+   "metadata": {},
+   "source": [
+    "task 2: "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "09ce33ee-9bd4-4df5-9e2f-8fd166e58c35",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(5.0, 12.0, 6.0)\n"
+     ]
+    }
+   ],
+   "source": [
+    "def triangle_solve(leg1,leg2):\n",
+    "    hypotenuse=(leg1**2+leg2**2)**0.5\n",
+    "    perimeter=leg1+leg2+hypotenuse\n",
+    "    area=(1/2)*leg1*leg2\n",
+    "    return(hypotenuse, perimeter, area) \n",
+    "print(triangle_solve(3,4))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "b2a27308-aa67-4595-b202-27c66aedafee",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "0\n",
+      "None\n",
+      "1.0\n",
+      "3125\n",
+      "Previous result: 3125\n",
+      "Total calculations: 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "class Calculator: \n",
+    "    def __init__(self):\n",
+    "        self.prev_result=0\n",
+    "        self.total_calculations=0 \n",
+    "    def add(self,a, b):\n",
+    "        self.prev_result=a + b\n",
+    "        self.total_calculations= self.total_calculations + 1\n",
+    "        return self.prev_result\n",
+    "    def substract(self, a, b):\n",
+    "        self.prev_result= a-b \n",
+    "        self.total_calculations=self.total_calculations + 1\n",
+    "        return self.prev_result\n",
+    "    def multiply(self, a, b): \n",
+    "        self.prev_result= a*b\n",
+    "        self.total_calculations=self.total_calculations+1\n",
+    "    def divide(self, a, b):\n",
+    "        self.prev_result=a/b\n",
+    "        self.total_calculations=self.total_calculations+1\n",
+    "        return self.prev_result\n",
+    "    def power(self, a, b):\n",
+    "        self.prev_result=a**b\n",
+    "        self.total_calculations=self.total_calculations+1 \n",
+    "        return self.prev_result\n",
+    "    def info(self):\n",
+    "        print('Previous result:', self.prev_result)\n",
+    "        print('Total calculations:', self.total_calculations)\n",
+    "calc=Calculator()\n",
+    "print(calc.add(5, 5))\n",
+    "print(calc.substract(5, 5))\n",
+    "print(calc.multiply(5, 5))\n",
+    "print(calc.divide(5, 5))\n",
+    "print(calc.power(5, 5))\n",
+    "calc.info()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "39fd4abb-08e8-444a-adfc-cc3496496811",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
