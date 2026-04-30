@@ -1,0 +1,195 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "1a1ac14b-2dfd-4d24-bee1-8906c243c008",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "My name is Marco, I am 22 years old, I am 68 inches tall, and my favorite color is blue.\n"
+     ]
+    }
+   ],
+   "source": [
+    "name='Marco'\n",
+    "age=22\n",
+    "height=68\n",
+    "favorite_color='blue'\n",
+    "print(\"My name is \" + name + \", I am \" + str(age) + \" years old, I am \" + str(height) + \" inches tall, and my favorite color is \" + favorite_color + \".\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d0127ed6-0033-4803-a4d2-13474483c739",
+   "metadata": {},
+   "source": [
+    "Task 2:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "d1e67dce-89cc-4c62-9095-493699cc27b1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The distance is 10 miles, which is the equal to 16.09 kilometers.\n"
+     ]
+    }
+   ],
+   "source": [
+    "miles_distance=10 \n",
+    "kilometers=miles_distance*1.609\n",
+    "print('The distance is ' + str(miles_distance) + ' miles, which is the equal to ' + str(kilometers) + ' kilometers.')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4f568e94-d634-4fcb-b943-5f991c642c1e",
+   "metadata": {},
+   "source": [
+    "task 3: "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "8994e74e-28af-456a-b020-594b3c9461ca",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Total time spent running: 60\n",
+      "Improvement: 4\n",
+      "Run 2 done twice: 56\n",
+      "Average of both runs: 30.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "run1=32\n",
+    "run2=28 \n",
+    "\n",
+    "total_time=run1+run2\n",
+    "improvement=run1-run2\n",
+    "double_run2=run2*2\n",
+    "average_time=(run1+run2)/2\n",
+    "\n",
+    "print('Total time spent running:', total_time)\n",
+    "print('Improvement:', improvement)\n",
+    "print('Run 2 done twice:', double_run2)\n",
+    "print('Average of both runs:', average_time)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1a15abc0-7beb-42b4-991d-2cfbef06d7e0",
+   "metadata": {},
+   "source": [
+    "task 4:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "484b6734-758a-47e3-ab7b-9f0e3bc06490",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "length of the quote: 98\n",
+      "uppercase:  AND THOSE WHO WERE SEEN DANCING WERE THOUGHT TO BE INSANE BY THOSE WHO COULD NOT HEAR THE MUSIC. \n",
+      "lowercase:  and those who were seen dancing were thought to be insane by those who could not hear the music. \n",
+      "without whitespaces: And those who were seen dancing were thought to be insane by those who could not hear the music.\n",
+      "split into words: ['And', 'those', 'who', 'were', 'seen', 'dancing', 'were', 'thought', 'to', 'be', 'insane', 'by', 'those', 'who', 'could', 'not', 'hear', 'the', 'music.']\n"
+     ]
+    }
+   ],
+   "source": [
+    "quote=' And those who were seen dancing were thought to be insane by those who could not hear the music. '\n",
+    "print('length of the quote:', len(quote))\n",
+    "print('uppercase:', quote.upper())\n",
+    "print('lowercase:', quote.lower())\n",
+    "print('without whitespaces:', quote.strip())\n",
+    "print('split into words:', quote.split())\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "698cebd6-3c8a-4a65-96d7-2fd3aa6d16bb",
+   "metadata": {},
+   "source": [
+    "task 5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "3e33699c-b522-4c74-bf62-f038b3f1b89f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the length of the first leg:  12\n",
+      "enter the length of the second leg:  123\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hypotenuse of the triangle is 123.58 units.\n"
+     ]
+    }
+   ],
+   "source": [
+    "leg1=float(input('enter the length of the first leg: '))\n",
+    "leg2=float(input('enter the length of the second leg: '))\n",
+    "hypotenuse=(leg1**2+leg2**2)**0.5\n",
+    "print('Hypotenuse of the triangle is ' + str(round(hypotenuse,2)) + ' units.')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6b307e05-a68f-48e2-8afe-45d5d236010e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
